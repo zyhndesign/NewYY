@@ -57,6 +57,34 @@
 		D52E85B11925F8A400C93F48 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = D52E85861925F8A400C93F48 /* zip.c */; };
 		D52E85B81925FA3700C93F48 /* download_zh.plist in Resources */ = {isa = PBXBuildFile; fileRef = D52E85B71925FA3700C93F48 /* download_zh.plist */; };
 		D52E85BB1925FABF00C93F48 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D52E85BD1925FABF00C93F48 /* Localizable.strings */; };
+		D536B6EF1926F0EC000EFB35 /* ColumnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D536B6D61926F0EC000EFB35 /* ColumnViewController.m */; };
+		D536B6F01926F0EC000EFB35 /* CommunityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D536B6D81926F0EC000EFB35 /* CommunityViewController.m */; };
+		D536B6F11926F0EC000EFB35 /* DownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D536B6DA1926F0EC000EFB35 /* DownloadViewController.m */; };
+		D536B6F21926F0EC000EFB35 /* FooterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D536B6DC1926F0EC000EFB35 /* FooterViewController.m */; };
+		D536B6F31926F0EC000EFB35 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D536B6DE1926F0EC000EFB35 /* HomeViewController.m */; };
+		D536B6F41926F0EC000EFB35 /* HumanityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D536B6E01926F0EC000EFB35 /* HumanityViewController.m */; };
+		D536B6F51926F0EC000EFB35 /* LandscapeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D536B6E21926F0EC000EFB35 /* LandscapeViewController.m */; };
+		D536B6F61926F0EC000EFB35 /* MusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D536B6E41926F0EC000EFB35 /* MusicViewController.m */; };
+		D536B6F71926F0EC000EFB35 /* PopupDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D536B6E61926F0EC000EFB35 /* PopupDetailViewController.m */; };
+		D536B6F81926F0EC000EFB35 /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D536B6E81926F0EC000EFB35 /* SplashViewController.m */; };
+		D536B6F91926F0EC000EFB35 /* StoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D536B6EA1926F0EC000EFB35 /* StoryViewController.m */; };
+		D536B6FA1926F0EC000EFB35 /* SuperColumnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D536B6EC1926F0EC000EFB35 /* SuperColumnViewController.m */; };
+		D536B6FB1926F0EC000EFB35 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D536B6EE1926F0EC000EFB35 /* VideoViewController.m */; };
+		D536B70B1926F120000EFB35 /* CommunityBoard.xib in Resources */ = {isa = PBXBuildFile; fileRef = D536B6FC1926F120000EFB35 /* CommunityBoard.xib */; };
+		D536B70C1926F120000EFB35 /* CommunityContentPanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = D536B6FD1926F120000EFB35 /* CommunityContentPanel.xib */; };
+		D536B70D1926F120000EFB35 /* DownloadTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D536B6FE1926F120000EFB35 /* DownloadTableViewCell.xib */; };
+		D536B70E1926F120000EFB35 /* DownloadWin.xib in Resources */ = {isa = PBXBuildFile; fileRef = D536B6FF1926F120000EFB35 /* DownloadWin.xib */; };
+		D536B70F1926F120000EFB35 /* Footer.xib in Resources */ = {isa = PBXBuildFile; fileRef = D536B7001926F120000EFB35 /* Footer.xib */; };
+		D536B7101926F120000EFB35 /* HomeBoard.xib in Resources */ = {isa = PBXBuildFile; fileRef = D536B7011926F120000EFB35 /* HomeBoard.xib */; };
+		D536B7111926F120000EFB35 /* HumanityBoard.xib in Resources */ = {isa = PBXBuildFile; fileRef = D536B7021926F120000EFB35 /* HumanityBoard.xib */; };
+		D536B7121926F120000EFB35 /* HumanityContentPanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = D536B7031926F120000EFB35 /* HumanityContentPanel.xib */; };
+		D536B7131926F120000EFB35 /* LandscapeBoard.xib in Resources */ = {isa = PBXBuildFile; fileRef = D536B7041926F120000EFB35 /* LandscapeBoard.xib */; };
+		D536B7141926F120000EFB35 /* LandscapeContentPanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = D536B7051926F120000EFB35 /* LandscapeContentPanel.xib */; };
+		D536B7151926F120000EFB35 /* MusicPlayerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D536B7061926F120000EFB35 /* MusicPlayerView.xib */; };
+		D536B7161926F120000EFB35 /* PopDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D536B7071926F120000EFB35 /* PopDetailView.xib */; };
+		D536B7171926F120000EFB35 /* StoryBoard.xib in Resources */ = {isa = PBXBuildFile; fileRef = D536B7081926F120000EFB35 /* StoryBoard.xib */; };
+		D536B7181926F120000EFB35 /* StoryContentPanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = D536B7091926F120000EFB35 /* StoryContentPanel.xib */; };
+		D536B7191926F120000EFB35 /* VideoPlay.xib in Resources */ = {isa = PBXBuildFile; fileRef = D536B70A1926F120000EFB35 /* VideoPlay.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -169,6 +197,47 @@
 		D52E85B71925FA3700C93F48 /* download_zh.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = download_zh.plist; sourceTree = "<group>"; };
 		D52E85BC1925FABF00C93F48 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		D52E85BE1925FAC500C93F48 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D536B6D51926F0EC000EFB35 /* ColumnViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColumnViewController.h; sourceTree = "<group>"; };
+		D536B6D61926F0EC000EFB35 /* ColumnViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColumnViewController.m; sourceTree = "<group>"; };
+		D536B6D71926F0EC000EFB35 /* CommunityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommunityViewController.h; sourceTree = "<group>"; };
+		D536B6D81926F0EC000EFB35 /* CommunityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommunityViewController.m; sourceTree = "<group>"; };
+		D536B6D91926F0EC000EFB35 /* DownloadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadViewController.h; sourceTree = "<group>"; };
+		D536B6DA1926F0EC000EFB35 /* DownloadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadViewController.m; sourceTree = "<group>"; };
+		D536B6DB1926F0EC000EFB35 /* FooterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FooterViewController.h; sourceTree = "<group>"; };
+		D536B6DC1926F0EC000EFB35 /* FooterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FooterViewController.m; sourceTree = "<group>"; };
+		D536B6DD1926F0EC000EFB35 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		D536B6DE1926F0EC000EFB35 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		D536B6DF1926F0EC000EFB35 /* HumanityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HumanityViewController.h; sourceTree = "<group>"; };
+		D536B6E01926F0EC000EFB35 /* HumanityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HumanityViewController.m; sourceTree = "<group>"; };
+		D536B6E11926F0EC000EFB35 /* LandscapeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandscapeViewController.h; sourceTree = "<group>"; };
+		D536B6E21926F0EC000EFB35 /* LandscapeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LandscapeViewController.m; sourceTree = "<group>"; };
+		D536B6E31926F0EC000EFB35 /* MusicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicViewController.h; sourceTree = "<group>"; };
+		D536B6E41926F0EC000EFB35 /* MusicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicViewController.m; sourceTree = "<group>"; };
+		D536B6E51926F0EC000EFB35 /* PopupDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopupDetailViewController.h; sourceTree = "<group>"; };
+		D536B6E61926F0EC000EFB35 /* PopupDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopupDetailViewController.m; sourceTree = "<group>"; };
+		D536B6E71926F0EC000EFB35 /* SplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashViewController.h; sourceTree = "<group>"; };
+		D536B6E81926F0EC000EFB35 /* SplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashViewController.m; sourceTree = "<group>"; };
+		D536B6E91926F0EC000EFB35 /* StoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryViewController.h; sourceTree = "<group>"; };
+		D536B6EA1926F0EC000EFB35 /* StoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryViewController.m; sourceTree = "<group>"; };
+		D536B6EB1926F0EC000EFB35 /* SuperColumnViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperColumnViewController.h; sourceTree = "<group>"; };
+		D536B6EC1926F0EC000EFB35 /* SuperColumnViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuperColumnViewController.m; sourceTree = "<group>"; };
+		D536B6ED1926F0EC000EFB35 /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
+		D536B6EE1926F0EC000EFB35 /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
+		D536B6FC1926F120000EFB35 /* CommunityBoard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommunityBoard.xib; sourceTree = "<group>"; };
+		D536B6FD1926F120000EFB35 /* CommunityContentPanel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommunityContentPanel.xib; sourceTree = "<group>"; };
+		D536B6FE1926F120000EFB35 /* DownloadTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DownloadTableViewCell.xib; sourceTree = "<group>"; };
+		D536B6FF1926F120000EFB35 /* DownloadWin.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DownloadWin.xib; sourceTree = "<group>"; };
+		D536B7001926F120000EFB35 /* Footer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Footer.xib; sourceTree = "<group>"; };
+		D536B7011926F120000EFB35 /* HomeBoard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeBoard.xib; sourceTree = "<group>"; };
+		D536B7021926F120000EFB35 /* HumanityBoard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HumanityBoard.xib; sourceTree = "<group>"; };
+		D536B7031926F120000EFB35 /* HumanityContentPanel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HumanityContentPanel.xib; sourceTree = "<group>"; };
+		D536B7041926F120000EFB35 /* LandscapeBoard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LandscapeBoard.xib; sourceTree = "<group>"; };
+		D536B7051926F120000EFB35 /* LandscapeContentPanel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LandscapeContentPanel.xib; sourceTree = "<group>"; };
+		D536B7061926F120000EFB35 /* MusicPlayerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MusicPlayerView.xib; sourceTree = "<group>"; };
+		D536B7071926F120000EFB35 /* PopDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopDetailView.xib; sourceTree = "<group>"; };
+		D536B7081926F120000EFB35 /* StoryBoard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StoryBoard.xib; sourceTree = "<group>"; };
+		D536B7091926F120000EFB35 /* StoryContentPanel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StoryContentPanel.xib; sourceTree = "<group>"; };
+		D536B70A1926F120000EFB35 /* VideoPlay.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoPlay.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -462,6 +531,32 @@
 		D52E85BF1925FB3500C93F48 /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D536B6D51926F0EC000EFB35 /* ColumnViewController.h */,
+				D536B6D61926F0EC000EFB35 /* ColumnViewController.m */,
+				D536B6D71926F0EC000EFB35 /* CommunityViewController.h */,
+				D536B6D81926F0EC000EFB35 /* CommunityViewController.m */,
+				D536B6D91926F0EC000EFB35 /* DownloadViewController.h */,
+				D536B6DA1926F0EC000EFB35 /* DownloadViewController.m */,
+				D536B6DB1926F0EC000EFB35 /* FooterViewController.h */,
+				D536B6DC1926F0EC000EFB35 /* FooterViewController.m */,
+				D536B6DD1926F0EC000EFB35 /* HomeViewController.h */,
+				D536B6DE1926F0EC000EFB35 /* HomeViewController.m */,
+				D536B6DF1926F0EC000EFB35 /* HumanityViewController.h */,
+				D536B6E01926F0EC000EFB35 /* HumanityViewController.m */,
+				D536B6E11926F0EC000EFB35 /* LandscapeViewController.h */,
+				D536B6E21926F0EC000EFB35 /* LandscapeViewController.m */,
+				D536B6E31926F0EC000EFB35 /* MusicViewController.h */,
+				D536B6E41926F0EC000EFB35 /* MusicViewController.m */,
+				D536B6E51926F0EC000EFB35 /* PopupDetailViewController.h */,
+				D536B6E61926F0EC000EFB35 /* PopupDetailViewController.m */,
+				D536B6E71926F0EC000EFB35 /* SplashViewController.h */,
+				D536B6E81926F0EC000EFB35 /* SplashViewController.m */,
+				D536B6E91926F0EC000EFB35 /* StoryViewController.h */,
+				D536B6EA1926F0EC000EFB35 /* StoryViewController.m */,
+				D536B6EB1926F0EC000EFB35 /* SuperColumnViewController.h */,
+				D536B6EC1926F0EC000EFB35 /* SuperColumnViewController.m */,
+				D536B6ED1926F0EC000EFB35 /* VideoViewController.h */,
+				D536B6EE1926F0EC000EFB35 /* VideoViewController.m */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -476,6 +571,21 @@
 		D52E85C11925FB3500C93F48 /* xibs */ = {
 			isa = PBXGroup;
 			children = (
+				D536B6FC1926F120000EFB35 /* CommunityBoard.xib */,
+				D536B6FD1926F120000EFB35 /* CommunityContentPanel.xib */,
+				D536B6FE1926F120000EFB35 /* DownloadTableViewCell.xib */,
+				D536B6FF1926F120000EFB35 /* DownloadWin.xib */,
+				D536B7001926F120000EFB35 /* Footer.xib */,
+				D536B7011926F120000EFB35 /* HomeBoard.xib */,
+				D536B7021926F120000EFB35 /* HumanityBoard.xib */,
+				D536B7031926F120000EFB35 /* HumanityContentPanel.xib */,
+				D536B7041926F120000EFB35 /* LandscapeBoard.xib */,
+				D536B7051926F120000EFB35 /* LandscapeContentPanel.xib */,
+				D536B7061926F120000EFB35 /* MusicPlayerView.xib */,
+				D536B7071926F120000EFB35 /* PopDetailView.xib */,
+				D536B7081926F120000EFB35 /* StoryBoard.xib */,
+				D536B7091926F120000EFB35 /* StoryContentPanel.xib */,
+				D536B70A1926F120000EFB35 /* VideoPlay.xib */,
 			);
 			path = xibs;
 			sourceTree = "<group>";
@@ -557,14 +667,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D536B70C1926F120000EFB35 /* CommunityContentPanel.xib in Resources */,
 				D52E85971925F8A400C93F48 /* 404.css in Resources */,
 				D52E851C1925F7F200C93F48 /* Images.xcassets in Resources */,
+				D536B7121926F120000EFB35 /* HumanityContentPanel.xib in Resources */,
+				D536B70D1926F120000EFB35 /* DownloadTableViewCell.xib in Resources */,
+				D536B7111926F120000EFB35 /* HumanityBoard.xib in Resources */,
+				D536B7181926F120000EFB35 /* StoryContentPanel.xib in Resources */,
+				D536B70B1926F120000EFB35 /* CommunityBoard.xib in Resources */,
+				D536B7151926F120000EFB35 /* MusicPlayerView.xib in Resources */,
+				D536B70F1926F120000EFB35 /* Footer.xib in Resources */,
 				D52E850E1925F7F200C93F48 /* InfoPlist.strings in Resources */,
+				D536B7131926F120000EFB35 /* LandscapeBoard.xib in Resources */,
+				D536B7101926F120000EFB35 /* HomeBoard.xib in Resources */,
+				D536B70E1926F120000EFB35 /* DownloadWin.xib in Resources */,
 				D52E85981925F8A400C93F48 /* 404.html in Resources */,
 				D52E85B81925FA3700C93F48 /* download_zh.plist in Resources */,
 				D52E85BB1925FABF00C93F48 /* Localizable.strings in Resources */,
 				D52E85961925F8A400C93F48 /* 404-1.png in Resources */,
+				D536B7141926F120000EFB35 /* LandscapeContentPanel.xib in Resources */,
 				D52E85171925F7F200C93F48 /* Main.storyboard in Resources */,
+				D536B7161926F120000EFB35 /* PopDetailView.xib in Resources */,
+				D536B7191926F120000EFB35 /* VideoPlay.xib in Resources */,
+				D536B7171926F120000EFB35 /* StoryBoard.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,35 +713,48 @@
 				D52E851A1925F7F200C93F48 /* ViewController.m in Sources */,
 				D52E85A31925F8A400C93F48 /* FMDatabase.m in Sources */,
 				D52E85941925F8A400C93F48 /* UIImageView+RotationAnimation.m in Sources */,
+				D536B6F21926F0EC000EFB35 /* FooterViewController.m in Sources */,
 				D52E85A51925F8A400C93F48 /* FMDatabasePool.m in Sources */,
 				D52E85A91925F8A400C93F48 /* JSONKit.m in Sources */,
+				D536B6F11926F0EC000EFB35 /* DownloadViewController.m in Sources */,
 				D52E85A71925F8A400C93F48 /* FMResultSet.m in Sources */,
 				D52E85A81925F8A400C93F48 /* GDataXMLNode.m in Sources */,
 				D52E85A41925F8A400C93F48 /* FMDatabaseAdditions.m in Sources */,
 				D52E85141925F7F200C93F48 /* AppDelegate.m in Sources */,
 				D52E859C1925F8A400C93F48 /* AFJSONRequestOperation.m in Sources */,
 				D52E85B01925F8A400C93F48 /* unzip.c in Sources */,
+				D536B6F51926F0EC000EFB35 /* LandscapeViewController.m in Sources */,
 				D52E85911925F8A400C93F48 /* DownloadTableViewCell.m in Sources */,
 				D52E85A11925F8A400C93F48 /* UIImageView+AFNetworking.m in Sources */,
+				D536B6FA1926F0EC000EFB35 /* SuperColumnViewController.m in Sources */,
+				D536B6FB1926F0EC000EFB35 /* VideoViewController.m in Sources */,
+				D536B6F41926F0EC000EFB35 /* HumanityViewController.m in Sources */,
 				D52E85931925F8A400C93F48 /* TimeUtil.m in Sources */,
 				D52E85A61925F8A400C93F48 /* FMDatabaseQueue.m in Sources */,
 				D52E85AD1925F8A400C93F48 /* ZipArchive.m in Sources */,
 				D52E85AE1925F8A400C93F48 /* ioapi.c in Sources */,
 				D52E85AF1925F8A400C93F48 /* mztools.c in Sources */,
+				D536B6F71926F0EC000EFB35 /* PopupDetailViewController.m in Sources */,
 				D52E85991925F8A400C93F48 /* AFHTTPClient.m in Sources */,
 				D52E85AB1925F8A400C93F48 /* UIViewController+MJPopupViewController.m in Sources */,
 				D52E859E1925F8A400C93F48 /* AFPropertyListRequestOperation.m in Sources */,
 				D52E85B11925F8A400C93F48 /* zip.c in Sources */,
+				D536B6F01926F0EC000EFB35 /* CommunityViewController.m in Sources */,
 				D52E85921925F8A400C93F48 /* FileUtils.m in Sources */,
+				D536B6F61926F0EC000EFB35 /* MusicViewController.m in Sources */,
+				D536B6F91926F0EC000EFB35 /* StoryViewController.m in Sources */,
+				D536B6EF1926F0EC000EFB35 /* ColumnViewController.m in Sources */,
 				D52E85951925F8A400C93F48 /* UILabel+VerticalAlign.m in Sources */,
 				D52E85A21925F8A400C93F48 /* AudioStreamer.m in Sources */,
 				D52E85101925F7F200C93F48 /* main.m in Sources */,
 				D52E85901925F8A400C93F48 /* DBUtils.m in Sources */,
 				D52E85AC1925F8A400C93F48 /* Reachability.m in Sources */,
 				D52E85AA1925F8A400C93F48 /* MJPopupBackgroundView.m in Sources */,
+				D536B6F81926F0EC000EFB35 /* SplashViewController.m in Sources */,
 				D52E859D1925F8A400C93F48 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				D52E859A1925F8A400C93F48 /* AFHTTPRequestOperation.m in Sources */,
 				D52E85A01925F8A400C93F48 /* AFXMLRequestOperation.m in Sources */,
+				D536B6F31926F0EC000EFB35 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -845,6 +983,7 @@
 				D52E85341925F7F300C93F48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D52E85351925F7F300C93F48 /* Build configuration list for PBXNativeTarget "YouYangTests" */ = {
 			isa = XCConfigurationList;
@@ -853,6 +992,7 @@
 				D52E85371925F7F300C93F48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
