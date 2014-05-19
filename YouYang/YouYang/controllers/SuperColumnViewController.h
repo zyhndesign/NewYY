@@ -17,6 +17,8 @@
      *  应用启动后，缩略图 图片下载 队列，同一时刻有2个thread来执行任务
      */
     NSOperationQueue *thumbDownQueue;
+    
+    int animationBeginYValue;
 }
 
 /**
@@ -48,4 +50,10 @@
  */
 - (void) closeButtonClicked;
 
+/**
+ *  接收动画事件
+ *
+ *  @param pointY ScrollView  Y value
+ */
+- (void)rootscrollViewDidScrollToPointY:(int)pointY;
 @end

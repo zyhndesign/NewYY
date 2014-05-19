@@ -70,6 +70,11 @@ extern DBUtils *db;
     }
 }
 
+- (void)rootscrollViewDidScrollToPointY:(int)pointY
+{
+   
+}
+
 -(void) assemblePanel:(int) pageNum
 {
     NSBundle *bundle = [NSBundle mainBundle];

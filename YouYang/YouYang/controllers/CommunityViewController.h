@@ -10,9 +10,10 @@
 
 @interface CommunityViewController : ColumnViewController
 {
-    IBOutlet UILabel *communityTitleLabel;
+    IBOutlet UIImageView *animationBottomImg;
 }
-@property (strong, nonatomic) IBOutlet UILabel *communityTitleLabel;
+
+@property (nonatomic, strong)IBOutlet UIImageView *animationBottomImg;
 
 - (IBAction)pageChange:(id)sender;
 

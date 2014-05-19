@@ -19,7 +19,7 @@
 
 @implementation CommunityViewController
 
-@synthesize communityTitleLabel;
+@synthesize animationBottomImg;
 
 extern DBUtils *db;
 
@@ -35,8 +35,6 @@ extern DBUtils *db;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    [communityTitleLabel setText:NSLocalizedString(@"communityTitle", nil)];
     
     // Do any additional setup after loading the view.
     int countArticle = [db countByCategory:COMMUNITY_CATEGORY];
@@ -89,10 +87,17 @@ extern DBUtils *db;
     
     if (subview != nil && muArray != nil)
     {
+        subview.backgroundColor = [UIColor clearColor];
+        
         UIControl *firstPanel = (UIControl*)[subview viewWithTag:401];
         UIControl *secondPanel = (UIControl*)[subview viewWithTag:406];
         UIControl *thirdPanel = (UIControl*)[subview viewWithTag:411];
         UIControl *fourPanel = (UIControl*)[subview viewWithTag:416];
+        
+        firstPanel.backgroundColor = [UIColor clearColor];
+        secondPanel.backgroundColor = [UIColor clearColor];
+        thirdPanel.backgroundColor = [UIColor clearColor];
+        fourPanel.backgroundColor = [UIColor clearColor];
         
         UIView *firstLine = (UIView*)[subview viewWithTag:421];
         UIView *secondLine = (UIView*)[subview viewWithTag:422];
@@ -251,9 +256,12 @@ extern DBUtils *db;
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-    [communityTitleLabel setText:NSLocalizedString(@"communityTitle", nil)];
 }
 
+- (void)rootscrollViewDidScrollToPointY:(int)pointY
+{
+
+}
 /*
 #pragma mark - Navigation
 

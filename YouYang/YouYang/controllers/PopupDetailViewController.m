@@ -58,8 +58,8 @@ VideoViewController *videoViewController = nil;
     [[GAI sharedInstance].defaultTracker send:[[GAIDictionaryBuilder createAppView] build]];
   
 	// Do any additional setup after loading the view.
-    [backBtn setBackgroundImage:[UIImage imageNamed:@"btnBackNormal"] forState:UIControlStateNormal];
-    [backBtn setBackgroundImage:[UIImage imageNamed:@"btnBackPressed"] forState:UIControlStateSelected];
+    [backBtn setBackgroundImage:[UIImage imageNamed:@"backNormalBtn"] forState:UIControlStateNormal];
+    [backBtn setBackgroundImage:[UIImage imageNamed:@"backPressedBtn"] forState:UIControlStateSelected];
     
     [backBtn addTarget:self action:@selector(BtnCloseClick) forControlEvents:UIControlEventTouchUpInside];
     backBtn.alpha = 1;

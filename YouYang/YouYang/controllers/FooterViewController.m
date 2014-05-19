@@ -11,6 +11,7 @@
 #import "../libs/MJPopup/UIViewController+MJPopupViewController.h"
 #import "PopupDetailViewController.h"
 #import "../libs/Reachability/Reachability.h"
+#import "../classes/UILabel+VerticalAlign.h"
 
 @interface FooterViewController ()<MJPopupDelegate>
 
@@ -38,6 +39,7 @@ DownloadViewController *downloadViewController;
     
     downloadImageView.userInteractionEnabled = YES;
     [bgTextlabel setText:NSLocalizedString(@"projectBg", nil)];
+    [bgTextlabel alignTop];
     UITapGestureRecognizer *sigTab = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(downLoadFiles)];
     [downloadImageView addGestureRecognizer:sigTab];
     

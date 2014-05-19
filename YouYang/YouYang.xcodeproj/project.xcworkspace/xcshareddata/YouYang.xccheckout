@@ -12,6 +12,8 @@
 	<dict>
 		<key>02A9E6A5-8124-4F15-8B40-259F87C4BE09</key>
 		<string>https://github.com/zyhndesign/NewYY.git</string>
+		<key>CCC74F81-904F-41C3-A258-316DD5E1FE0E</key>
+		<string>https://192.168.1.137/svn/DesignDoc</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>YouYang/YouYang.xcodeproj/project.xcworkspace</string>
@@ -19,6 +21,13 @@
 	<dict>
 		<key>02A9E6A5-8124-4F15-8B40-259F87C4BE09</key>
 		<string>../../..</string>
+		<key>CCC74F81-904F-41C3-A258-316DD5E1FE0E</key>
+		<string>../../../../../../MAC_DATA</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>CCC74F81-904F-41C3-A258-316DD5E1FE0E</key>
+		<string>https://192.168.1.137/svn/DesignDoc</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/zyhndesign/NewYY.git</string>
@@ -28,6 +37,14 @@
 	<string>02A9E6A5-8124-4F15-8B40-259F87C4BE09</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CCC74F81-904F-41C3-A258-316DD5E1FE0E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MAC_DATA</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>

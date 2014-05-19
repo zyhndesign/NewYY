@@ -256,7 +256,7 @@ NSString* path = nil;
     NSMutableDictionary *nsDict = nil;
     if ([db open])
     {
-        NSString* sql = @"select * from contentlist where isHeadline = 1 order by post_date desc limit 4";
+        NSString* sql = @"select * from contentlist where isHeadline = 1 order by post_date desc limit 3";
         FMResultSet *rs = [db executeQuery:sql];
         while ([rs next])
         {

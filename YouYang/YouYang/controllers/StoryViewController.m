@@ -19,6 +19,8 @@
 
 @implementation StoryViewController
 
+@synthesize animationBottomImg, animationLeftImg;
+
 extern DBUtils *db;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -43,10 +45,12 @@ extern DBUtils *db;
     }
     
     columnScrollView = (UIScrollView *)[self.view viewWithTag:150];
+    
     pageControl = (UIPageControl *)[self.view viewWithTag:151];
     
     columnScrollView.contentSize = CGSizeMake(columnScrollView.frame.size.width * countPage, columnScrollView.frame.size.height);
     columnScrollView.delegate = self;
+    
     columnScrollView.backgroundColor = [UIColor clearColor];
     
     pageControl.currentPage = 0;
@@ -88,6 +92,7 @@ extern DBUtils *db;
     
     if (subview != nil && muArray != nil)
     {
+        subview.backgroundColor = [UIColor clearColor];
         subview.frame = frame;
         
         //根据数据加载subview
@@ -200,6 +205,11 @@ extern DBUtils *db;
         
         [muDistionary setObject:subview forKey:[NSNumber  numberWithInt:(pageNum)]];
     }
+}
+
+- (void)rootscrollViewDidScrollToPointY:(int)pointY
+{
+
 }
 
 - (void)didReceiveMemoryWarning

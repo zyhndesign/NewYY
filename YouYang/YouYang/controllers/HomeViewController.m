@@ -20,10 +20,11 @@
 
 @implementation HomeViewController
 
-@synthesize columnBigBg,firstViewPanel,firstArticleTitle,firstArticleTime;
-@synthesize secondViewPanel,secondArticleTimeLabel,secondArticleThumb,secondArticleTitleLabel,secondArticleSummaryLabel;
-@synthesize threeViewPanel,threeArticleTimeLabel,threeArticleThumb,threeArticleTitleLabel,threeArticleSummaryLabel;
-@synthesize fourViewPanel,fourArticleTimeLabel,fourArticleThumb,fourArticleTitleLabel,fourArticleSummaryLabel;
+@synthesize secondViewPanel,secondArticleThumb,secondArticleTitleLabel,secondArticleSummaryLabel;
+@synthesize threeViewPanel,threeArticleThumb,threeArticleTitleLabel,threeArticleSummaryLabel;
+@synthesize fourViewPanel,fourArticleThumb,fourArticleTitleLabel,fourArticleSummaryLabel;
+@synthesize animationLeftImg, animationRightImg;
+@synthesize homeTopBackground;
 
 extern DBUtils *db;
 FileUtils *fileUtils;
@@ -46,9 +47,6 @@ PopupDetailViewController* detailViewController;
     fileUtils = [FileUtils new];
     [fileUtils createAppFilesDir];
     
-    firstViewPanel.backgroundColor = [UIColor clearColor];
-    
-    [firstViewPanel addTarget:self action:@selector(panelClick:) forControlEvents:UIControlEventTouchUpInside];
     [secondViewPanel addTarget:self action:@selector(panelClick:) forControlEvents:UIControlEventTouchUpInside];
     [threeViewPanel addTarget:self action:@selector(panelClick:) forControlEvents:UIControlEventTouchUpInside];
     [fourViewPanel addTarget:self action:@selector(panelClick:) forControlEvents:UIControlEventTouchUpInside];
@@ -63,15 +61,6 @@ PopupDetailViewController* detailViewController;
     if ([muArray count] >= 1)
     {
         NSMutableDictionary *muDict = [muArray objectAtIndex:0];
-        [firstArticleTitle setText:[muDict objectForKey:@"title"]];
-        firstArticleTime.textAlignment = NSTextAlignmentCenter;
-        [firstArticleTime setText:[TimeUtil convertTimeFormat:[muDict objectForKey:@"timestamp"]]];
-        firstViewPanel.accessibilityLabel = [muDict objectForKey:@"serverID"];
-    }
-    
-    if ([muArray count] >= 2)
-    {
-        NSMutableDictionary *muDict = [muArray objectAtIndex:1];
         downOperation = [self loadingImageOperation:muDict andImageView:secondArticleThumb];
         if (downOperation != nil)
         {
@@ -79,8 +68,6 @@ PopupDetailViewController* detailViewController;
         }
         [secondArticleTitleLabel setText:[muDict objectForKey:@"title"]];
         [secondArticleTitleLabel alignTop];
-        secondArticleTimeLabel.textAlignment = NSTextAlignmentCenter;
-        [secondArticleTimeLabel setText:[TimeUtil convertTimeFormat:[muDict objectForKey:@"timestamp"]]];
         
         [secondArticleSummaryLabel setText:[muDict objectForKey:@"description"]];
         [secondArticleSummaryLabel alignTop];
@@ -97,9 +84,9 @@ PopupDetailViewController* detailViewController;
         secondViewPanel.hidden = YES;
     }
     
-    if ([muArray count] >= 3)
+    if ([muArray count] >= 2)
     {
-        NSMutableDictionary *muDict = [muArray objectAtIndex:2];
+        NSMutableDictionary *muDict = [muArray objectAtIndex:1];
         downOperation = [self loadingImageOperation:muDict andImageView:threeArticleThumb];
         if (downOperation != nil)
         {
@@ -108,8 +95,7 @@ PopupDetailViewController* detailViewController;
         
         [threeArticleTitleLabel setText:[muDict objectForKey:@"title"]];
         [threeArticleTitleLabel alignTop];
-        threeArticleTimeLabel.textAlignment = NSTextAlignmentCenter;
-        [threeArticleTimeLabel setText:[TimeUtil convertTimeFormat:[muDict objectForKey:@"timestamp"]]];
+        
         [threeArticleSummaryLabel setText:[muDict objectForKey:@"description"]];
         [threeArticleSummaryLabel alignTop];
         
@@ -124,9 +110,9 @@ PopupDetailViewController* detailViewController;
         threeViewPanel.hidden = YES;
     }
     
-    if ([muArray count] >= 4)
+    if ([muArray count] >= 3)
     {
-        NSMutableDictionary *muDict = [muArray objectAtIndex:3];
+        NSMutableDictionary *muDict = [muArray objectAtIndex:2];
         downOperation = [self loadingImageOperation:muDict andImageView:fourArticleThumb];
         if (downOperation != nil)
         {
@@ -134,8 +120,7 @@ PopupDetailViewController* detailViewController;
         }
         [fourArticleTitleLabel setText:[muDict objectForKey:@"title"]];
         [fourArticleTitleLabel alignTop];
-        fourArticleTimeLabel.textAlignment = NSTextAlignmentCenter;
-        [fourArticleTimeLabel setText:[TimeUtil convertTimeFormat:[muDict objectForKey:@"timestamp"]]];
+        
         [fourArticleSummaryLabel setText:[muDict objectForKey:@"description"]];
         [fourArticleSummaryLabel alignTop];
         fourViewPanel.accessibilityLabel = [muDict objectForKey:@"serverID"];
@@ -147,6 +132,22 @@ PopupDetailViewController* detailViewController;
     else
     {
         fourViewPanel.hidden = YES;
+    }
+}
+
+- (void)rootscrollViewDidScrollToPointY:(int)pointY
+{
+    if (pointY > animationBeginYValue && pointY < homeTopBackground.frame.size.height)
+    {
+        int positionY = animationLeftImg.frame.size.height - (pointY - animationBeginYValue)/2;
+        [animationLeftImg setFrame:CGRectMake(animationLeftImg.frame.origin.x, positionY, animationLeftImg.frame.size.width, animationLeftImg.frame.size.height)];
+        [animationRightImg setFrame:CGRectMake(animationRightImg.frame.origin.x, positionY, animationRightImg.frame.size.width, animationRightImg.frame.size.height)];
+    }
+    if (pointY >= homeTopBackground.frame.size.height)
+    {
+        int positionY = 1250 - (homeTopBackground.frame.size.height - animationBeginYValue)/2 - (pointY - homeTopBackground.frame.size.height)/8;
+        [animationLeftImg setFrame:CGRectMake(animationLeftImg.frame.origin.x, positionY, animationLeftImg.frame.size.width, animationLeftImg.frame.size.height)];
+        [animationRightImg setFrame:CGRectMake(animationRightImg.frame.origin.x, positionY, animationRightImg.frame.size.width, animationRightImg.frame.size.height)];
     }
 }
 

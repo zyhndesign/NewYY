@@ -19,6 +19,8 @@
 
 @implementation HumanityViewController
 
+@synthesize animationLeftImg, animationBottomImg, animationTopImg;
+
 extern DBUtils *db;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -93,10 +95,17 @@ extern DBUtils *db;
     
     if (subview != nil && muArray != nil)
     {
+        subview.backgroundColor = [UIColor clearColor];
+        
         UIControl *firstPanel = (UIControl*)[subview viewWithTag:201];
         UIControl *secondPanel = (UIControl*)[subview viewWithTag:206];
         UIControl *thirdPanel = (UIControl*)[subview viewWithTag:211];
         UIControl *fourPanel = (UIControl*)[subview viewWithTag:216];
+        
+        firstPanel.backgroundColor = [UIColor clearColor];
+        secondPanel.backgroundColor = [UIColor clearColor];
+        thirdPanel.backgroundColor = [UIColor clearColor];
+        fourPanel.backgroundColor = [UIColor clearColor];
         
         UIView *lineOneView = (UIView *)[subview viewWithTag:230];
         UIView *lineTwoView = (UIView *)[subview viewWithTag:231];
@@ -250,6 +259,11 @@ extern DBUtils *db;
         
         [muDistionary setObject:subview forKey:[NSNumber  numberWithInt:(pageNum)]];
     }
+}
+
+- (void)rootscrollViewDidScrollToPointY:(int)pointY
+{
+
 }
 
 /*

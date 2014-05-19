@@ -7,6 +7,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LandscapeViewController">
             <connections>
+                <outlet property="animationLeftImg" destination="zMB-M4-QbE" id="ecN-1E-CUW"/>
+                <outlet property="animationRightImg" destination="zeT-DZ-1Ei" id="WRo-Vq-fNV"/>
                 <outlet property="view" destination="GbA-O3-Pdq" id="lAa-BU-PHw"/>
             </connections>
         </placeholder>

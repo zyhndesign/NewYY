@@ -20,14 +20,17 @@
 
 @implementation SuperColumnViewController
 
+
 extern FileUtils *fileUtils;
 extern PopupDetailViewController* detailViewController;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    animationBeginYValue = 200;
     if (self) {
         // Custom initialization
+       
     }
     return self;
 }
@@ -103,10 +106,19 @@ extern PopupDetailViewController* detailViewController;
     UIImage *videoImage = [UIImage imageNamed:@"video"];
     UIImageView *videoImgView = [[UIImageView alloc] initWithImage:videoImage];
     videoImgView.contentMode = UIViewContentModeScaleAspectFit;
-    videoImgView.frame = CGRectMake(0, 0, 80, 80);
+    videoImgView.frame = CGRectMake(0, 0, 40, 35);
     [view addSubview:videoImgView];
 }
 
+/**
+ *  留给子类实现
+ *
+ *  @param pointY
+ */
+- (void)rootscrollViewDidScrollToPointY:(int)pointY
+{
+
+}
 
 - (void)viewDidLoad
 {

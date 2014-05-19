@@ -26,7 +26,7 @@
 
 @implementation MusicViewController
 
-@synthesize musicLoadIndicator, musicNextBtn, musicPlayOrPauseBtn;
+@synthesize musicNextBtn, musicPlayOrPauseBtn;
 
 @synthesize musicPreviousBtn, musicProgressView,musicNameLabel;
 
@@ -56,9 +56,7 @@ extern DBUtils *db;
     
     [musicNextBtn setBackgroundImage:[UIImage imageNamed:@"musicNextDefault"] forState:UIControlStateNormal];
     [musicNextBtn setBackgroundImage:[UIImage imageNamed:@"musicNextActivied"] forState:UIControlStateSelected];
-    
-    musicLoadIndicator.hidden = YES;
-    
+        
     musicProgressView.progress = 0;
     
     musicArray = [NSMutableArray new];

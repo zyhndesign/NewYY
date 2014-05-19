@@ -106,7 +106,8 @@
     mainScrollView.delegate = self;
     
     musicViewController = [[MusicViewController new] initWithNibName:@"MusicPlayerView" bundle:mainBundle];
-    [musicViewController.view setFrame:CGRectMake(musicBtn.frame.size.width - musicViewController.view.frame.size.width, musicBtn.frame.size.height, musicViewController.view.frame.size.width, musicViewController.view.frame.size.height)];
+    [musicViewController.view setFrame:CGRectMake(musicBtn.frame.origin.x - musicViewController.view.frame.size.width, musicBtn.frame.origin.y, musicViewController.view.frame.size.width, musicViewController.view.frame.size.height)];
+    musicViewController.view.hidden = YES;
     [self.view addSubview:musicViewController.view];
     
     musicBtn.userInteractionEnabled = YES;
@@ -133,6 +134,8 @@
 
 -(void)menuBtnClick
 {
+    [self.view bringSubviewToFront:menuViewBtn];
+    
     if (menuPanel.hidden)
     {
         musicViewController.view.hidden = YES;
@@ -156,6 +159,7 @@
         [storyBtn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
         [communityBtn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
         [recommendBtn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
+        [landscapeViewController rootscrollViewDidScrollToPointY:offsetY];
     }
     else if (offsetY >= humanityYValue && offsetY < storyYValue)
     {
@@ -164,6 +168,7 @@
         [landscapeBtn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
         [communityBtn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
         [recommendBtn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
+        [humanityViewController rootscrollViewDidScrollToPointY:offsetY];
     }
     else if (offsetY >= storyYValue && offsetY < communityYValue)
     {
@@ -172,6 +177,7 @@
         [landscapeBtn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
         [communityBtn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
         [recommendBtn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
+        [storyViewController rootscrollViewDidScrollToPointY:offsetY];
     }
     else if (offsetY >= communityYValue)
     {
@@ -180,6 +186,7 @@
         [storyBtn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
         [landscapeBtn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
         [recommendBtn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
+        [communityViewController rootscrollViewDidScrollToPointY:offsetY];
     }
     else if (offsetY < landscapeYValue)
     {
@@ -188,6 +195,8 @@
         [storyBtn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
         [communityBtn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
         [recommendBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        
+        [homeViewController rootscrollViewDidScrollToPointY:offsetY];
     }
     
 }

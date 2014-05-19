@@ -7,6 +7,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StoryViewController">
             <connections>
+                <outlet property="animationBottomImg" destination="zMS-ef-UMc" id="5XL-Lf-dea"/>
+                <outlet property="animationLeftImg" destination="Acz-6e-PnV" id="lxp-Lr-9hk"/>
                 <outlet property="view" destination="Aiv-wP-kDd" id="kD1-OR-hdw"/>
             </connections>
         </placeholder>
@@ -20,7 +22,7 @@
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" tag="150" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oUy-mD-wp7">
-                    <rect key="frame" x="106" y="995" width="824" height="235"/>
+                    <rect key="frame" x="106" y="995" width="824" height="255"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                 </scrollView>
                 <pageControl opaque="NO" tag="151" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="0XM-PT-Pqr">

@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		D501D6AA1929A21F005EA9F7 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = D501D6A81929A21F005EA9F7 /* Constants.m */; };
+		D501D6AC1929FC0B005EA9F7 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D501D6AB1929FC0B005EA9F7 /* libxml2.dylib */; };
+		D501D6AE1929FC22005EA9F7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D501D6AD1929FC22005EA9F7 /* AudioToolbox.framework */; };
+		D501D6B01929FC32005EA9F7 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D501D6AF1929FC32005EA9F7 /* libsqlite3.0.dylib */; };
+		D501D6B21929FC3E005EA9F7 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D501D6B11929FC3E005EA9F7 /* libz.1.2.5.dylib */; };
+		D501D6B41929FC53005EA9F7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D501D6B31929FC52005EA9F7 /* SystemConfiguration.framework */; };
+		D501D6B61929FC6F005EA9F7 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D501D6B51929FC6F005EA9F7 /* CoreData.framework */; };
+		D501D6B81929FC7E005EA9F7 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D501D6B71929FC7E005EA9F7 /* libGoogleAnalyticsServices.a */; };
+		D501D6BA192A0115005EA9F7 /* YouYang-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D501D6B9192A0115005EA9F7 /* YouYang-Info.plist */; };
 		D52E85041925F7F200C93F48 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D52E85031925F7F200C93F48 /* Foundation.framework */; };
 		D52E85061925F7F200C93F48 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D52E85051925F7F200C93F48 /* CoreGraphics.framework */; };
 		D52E85081925F7F200C93F48 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D52E85071925F7F200C93F48 /* UIKit.framework */; };
@@ -40,18 +48,18 @@
 		D52E859F1925F8A400C93F48 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D52E85591925F8A400C93F48 /* AFURLConnectionOperation.m */; };
 		D52E85A01925F8A400C93F48 /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D52E855B1925F8A400C93F48 /* AFXMLRequestOperation.m */; };
 		D52E85A11925F8A400C93F48 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = D52E855D1925F8A400C93F48 /* UIImageView+AFNetworking.m */; };
-		D52E85A21925F8A400C93F48 /* AudioStreamer.m in Sources */ = {isa = PBXBuildFile; fileRef = D52E85601925F8A400C93F48 /* AudioStreamer.m */; };
+		D52E85A21925F8A400C93F48 /* AudioStreamer.m in Sources */ = {isa = PBXBuildFile; fileRef = D52E85601925F8A400C93F48 /* AudioStreamer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		D52E85A31925F8A400C93F48 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = D52E85641925F8A400C93F48 /* FMDatabase.m */; };
 		D52E85A41925F8A400C93F48 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D52E85661925F8A400C93F48 /* FMDatabaseAdditions.m */; };
 		D52E85A51925F8A400C93F48 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = D52E85681925F8A400C93F48 /* FMDatabasePool.m */; };
 		D52E85A61925F8A400C93F48 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = D52E856A1925F8A400C93F48 /* FMDatabaseQueue.m */; };
 		D52E85A71925F8A400C93F48 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = D52E856C1925F8A400C93F48 /* FMResultSet.m */; };
-		D52E85A81925F8A400C93F48 /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D52E856F1925F8A400C93F48 /* GDataXMLNode.m */; };
-		D52E85A91925F8A400C93F48 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D52E85721925F8A400C93F48 /* JSONKit.m */; };
+		D52E85A81925F8A400C93F48 /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D52E856F1925F8A400C93F48 /* GDataXMLNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D52E85A91925F8A400C93F48 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D52E85721925F8A400C93F48 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		D52E85AA1925F8A400C93F48 /* MJPopupBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = D52E85751925F8A400C93F48 /* MJPopupBackgroundView.m */; };
 		D52E85AB1925F8A400C93F48 /* UIViewController+MJPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D52E85771925F8A400C93F48 /* UIViewController+MJPopupViewController.m */; };
 		D52E85AC1925F8A400C93F48 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = D52E857A1925F8A400C93F48 /* Reachability.m */; };
-		D52E85AD1925F8A400C93F48 /* ZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = D52E857D1925F8A400C93F48 /* ZipArchive.m */; };
+		D52E85AD1925F8A400C93F48 /* ZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = D52E857D1925F8A400C93F48 /* ZipArchive.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		D52E85AE1925F8A400C93F48 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = D52E85801925F8A400C93F48 /* ioapi.c */; };
 		D52E85AF1925F8A400C93F48 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = D52E85821925F8A400C93F48 /* mztools.c */; };
 		D52E85B01925F8A400C93F48 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = D52E85841925F8A400C93F48 /* unzip.c */; };
@@ -102,6 +110,14 @@
 		D501D6A71929A21F005EA9F7 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		D501D6A81929A21F005EA9F7 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		D501D6A91929A21F005EA9F7 /* VarUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VarUtils.h; sourceTree = "<group>"; };
+		D501D6AB1929FC0B005EA9F7 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		D501D6AD1929FC22005EA9F7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		D501D6AF1929FC32005EA9F7 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		D501D6B11929FC3E005EA9F7 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
+		D501D6B31929FC52005EA9F7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D501D6B51929FC6F005EA9F7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		D501D6B71929FC7E005EA9F7 /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGoogleAnalyticsServices.a; path = "../../../../MAC_DATA/第三方组件/GoogleAnalyticsServicesiOS_3.06/libGoogleAnalyticsServices.a"; sourceTree = "<group>"; };
+		D501D6B9192A0115005EA9F7 /* YouYang-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "YouYang-Info.plist"; sourceTree = "<group>"; };
 		D52E85001925F7F200C93F48 /* YouYang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouYang.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D52E85031925F7F200C93F48 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D52E85051925F7F200C93F48 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -197,7 +213,6 @@
 		D52E85B21925F9E200C93F48 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		D52E85B31925F9E200C93F48 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		D52E85B41925F9E200C93F48 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
-		D52E85B51925F9F100C93F48 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "zh-Hans"; path = "zh-Hans.lproj/YouYang-Info.plist"; sourceTree = "<group>"; };
 		D52E85B71925FA3700C93F48 /* download_zh.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = download_zh.plist; sourceTree = "<group>"; };
 		D52E85BC1925FABF00C93F48 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		D52E85BE1925FAC500C93F48 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -249,6 +264,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D501D6B81929FC7E005EA9F7 /* libGoogleAnalyticsServices.a in Frameworks */,
+				D501D6B61929FC6F005EA9F7 /* CoreData.framework in Frameworks */,
+				D501D6B41929FC53005EA9F7 /* SystemConfiguration.framework in Frameworks */,
+				D501D6B21929FC3E005EA9F7 /* libz.1.2.5.dylib in Frameworks */,
+				D501D6B01929FC32005EA9F7 /* libsqlite3.0.dylib in Frameworks */,
+				D501D6AE1929FC22005EA9F7 /* AudioToolbox.framework in Frameworks */,
+				D501D6AC1929FC0B005EA9F7 /* libxml2.dylib in Frameworks */,
 				D52E85061925F7F200C93F48 /* CoreGraphics.framework in Frameworks */,
 				D52E85081925F7F200C93F48 /* UIKit.framework in Frameworks */,
 				D52E85041925F7F200C93F48 /* Foundation.framework in Frameworks */,
@@ -290,6 +312,13 @@
 		D52E85021925F7F200C93F48 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D501D6B71929FC7E005EA9F7 /* libGoogleAnalyticsServices.a */,
+				D501D6B51929FC6F005EA9F7 /* CoreData.framework */,
+				D501D6B31929FC52005EA9F7 /* SystemConfiguration.framework */,
+				D501D6B11929FC3E005EA9F7 /* libz.1.2.5.dylib */,
+				D501D6AF1929FC32005EA9F7 /* libsqlite3.0.dylib */,
+				D501D6AD1929FC22005EA9F7 /* AudioToolbox.framework */,
+				D501D6AB1929FC0B005EA9F7 /* libxml2.dylib */,
 				D52E85031925F7F200C93F48 /* Foundation.framework */,
 				D52E85051925F7F200C93F48 /* CoreGraphics.framework */,
 				D52E85071925F7F200C93F48 /* UIKit.framework */,
@@ -324,8 +353,8 @@
 		D52E850A1925F7F200C93F48 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D501D6B9192A0115005EA9F7 /* YouYang-Info.plist */,
 				D52E85B71925FA3700C93F48 /* download_zh.plist */,
-				D52E85B61925F9F100C93F48 /* YouYang-Info.plist */,
 				D52E850C1925F7F200C93F48 /* InfoPlist.strings */,
 				D52E850F1925F7F200C93F48 /* main.m */,
 				D52E85111925F7F200C93F48 /* YouYang-Prefix.pch */,
@@ -691,6 +720,7 @@
 				D52E85981925F8A400C93F48 /* 404.html in Resources */,
 				D52E85B81925FA3700C93F48 /* download_zh.plist in Resources */,
 				D52E85BB1925FABF00C93F48 /* Localizable.strings in Resources */,
+				D501D6BA192A0115005EA9F7 /* YouYang-Info.plist in Resources */,
 				D52E85961925F8A400C93F48 /* 404-1.png in Resources */,
 				D536B7141926F120000EFB35 /* LandscapeContentPanel.xib in Resources */,
 				D52E85171925F7F200C93F48 /* Main.storyboard in Resources */,
@@ -812,14 +842,6 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		D52E85B61925F9F100C93F48 /* YouYang-Info.plist */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D52E85B51925F9F100C93F48 /* zh-Hans */,
-			);
-			name = "YouYang-Info.plist";
-			sourceTree = "<group>";
-		};
 		D52E85BD1925FABF00C93F48 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -911,9 +933,20 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YouYang/YouYang-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SDKROOT)/usr/include/libxml2",
+				);
 				INFOPLIST_FILE = "YouYang/YouYang-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Volumes/MAC_DATA/第三方组件/GoogleAnalyticsServicesiOS_3.06",
+					"$(SDKROOT)/usr/include/libxml2",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -925,9 +958,20 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YouYang/YouYang-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SDKROOT)/usr/include/libxml2",
+				);
 				INFOPLIST_FILE = "YouYang/YouYang-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Volumes/MAC_DATA/第三方组件/GoogleAnalyticsServicesiOS_3.06",
+					"$(SDKROOT)/usr/include/libxml2",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
