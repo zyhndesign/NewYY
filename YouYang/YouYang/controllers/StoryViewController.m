@@ -19,8 +19,6 @@
 
 @implementation StoryViewController
 
-@synthesize storyTitleLabel;
-
 extern DBUtils *db;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -36,8 +34,6 @@ extern DBUtils *db;
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    [storyTitleLabel setText:NSLocalizedString(@"storyTitle", nil)];
     
     int countArticle = [db countByCategory:STORY_CATEGORY];
     countPage = (countArticle / STORY_PAGE_INSIDE_NUM);
@@ -95,9 +91,9 @@ extern DBUtils *db;
         subview.frame = frame;
         
         //根据数据加载subview
-        UIImageView *firstImg = (UIImageView*)[subview viewWithTag:302];
+        UIImageView *firstImg = (UIImageView*)[subview viewWithTag:301];
         UILabel* firstLabelTitle = (UILabel*)[subview viewWithTag:303];
-        UILabel* firstLabelSummary = (UILabel*)[subview viewWithTag:304];
+        UIView* firstView = (UIView*)[subview viewWithTag:302];
         
         if (muArray.count >= 1 && [muArray objectAtIndex:0])
         {
@@ -117,12 +113,6 @@ extern DBUtils *db;
             UITapGestureRecognizer *sigTab = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(panelClick:)];
             [firstImg addGestureRecognizer:sigTab];
             
-            [firstLabelSummary setText:[muDict objectForKey:@"description"]];
-            [firstLabelSummary alignTop];
-            
-            firstLabelSummary.lineBreakMode = NSLineBreakByTruncatingTail;
-            
-            
             if ([[muDict objectForKey:@"hasVideo"] intValue] == 1)
             {
                 [self addVideoImage:firstImg];
@@ -132,12 +122,12 @@ extern DBUtils *db;
         {
             firstImg.hidden = YES;
             firstLabelTitle.hidden = YES;
-            firstLabelSummary.hidden = YES;
+            firstView.hidden = YES;
         }
         
-        UIImageView *secondImg = (UIImageView*)[subview viewWithTag:306];
-        UILabel* secondLabelTitle = (UILabel*)[subview viewWithTag:307];
-        UIView *secondView = (UIView *)[subview viewWithTag:322];
+        UIImageView *secondImg = (UIImageView*)[subview viewWithTag:304];
+        UILabel* secondLabelTitle = (UILabel*)[subview viewWithTag:306];
+        UIView *secondView = (UIView *)[subview viewWithTag:305];
         
         if (muArray.count >= 2 && [muArray objectAtIndex:1])
         {
@@ -170,9 +160,9 @@ extern DBUtils *db;
             secondView.hidden = YES;
         }
         
-        UIImageView *thirdImg = (UIImageView*)[subview viewWithTag:312];
-        UILabel* thirdLabelTitle = (UILabel*)[subview viewWithTag:313];
-        UIView *thirdView = (UIView *)[subview viewWithTag:324];
+        UIImageView *thirdImg = (UIImageView*)[subview viewWithTag:307];
+        UILabel* thirdLabelTitle = (UILabel*)[subview viewWithTag:309];
+        UIView *thirdView = (UIView *)[subview viewWithTag:308];
         
         if (muArray.count >= 3 && [muArray objectAtIndex:2])
         {
@@ -204,77 +194,7 @@ extern DBUtils *db;
             thirdLabelTitle.hidden = YES;
             thirdView.hidden = YES;
         }
-        
-        UIImageView *fourImg = (UIImageView*)[subview viewWithTag:309];
-        UILabel* fourLabelTitle = (UILabel*)[subview viewWithTag:310];
-        UIView *fourView = (UIView *)[subview viewWithTag:323];
-        
-        if (muArray.count >= 4 && [muArray objectAtIndex:3])
-        {
-            NSMutableDictionary *muDict = [muArray objectAtIndex:3];
-            
-            //异步加载图片
-            downOperation = [self loadingImageOperation:muDict andImageView:fourImg];
-            if (downOperation != nil)
-            {
-                [thumbDownQueue addOperation:downOperation];
-            }
-            
-            
-            [fourLabelTitle setText:[muDict objectForKey:@"title"]];
-            fourLabelTitle.backgroundColor = [UIColor clearColor];
-            
-            fourImg.accessibilityLabel = [muDict objectForKey:@"serverID"];
-            fourImg.userInteractionEnabled = YES;
-            UITapGestureRecognizer *sigTab = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(panelClick:)];
-            [fourImg addGestureRecognizer:sigTab];
-            
-            if ([[muDict objectForKey:@"hasVideo"] intValue] == 1)
-            {
-                [self addVideoImage:fourImg];
-            }
-        }
-        else
-        {
-            fourImg.hidden = YES;
-            fourLabelTitle.hidden = YES;
-            fourView.hidden = YES;
-        }
-        
-        UIImageView *fiveImg = (UIImageView*)[subview viewWithTag:315];
-        UILabel* fiveLabelTitle = (UILabel*)[subview viewWithTag:316];
-        UIView *fiveView = (UIView *)[subview viewWithTag:325];
-        
-        if (muArray.count >= 5 && [muArray objectAtIndex:4])
-        {
-            NSMutableDictionary *muDict = [muArray objectAtIndex:4];
-            
-            //异步加载图片
-            downOperation = [self loadingImageOperation:muDict andImageView:fiveImg];
-            if (downOperation != nil)
-            {
-                [thumbDownQueue addOperation:downOperation];
-            }
-            
-            [fiveLabelTitle setText:[muDict objectForKey:@"title"]];
-            fiveLabelTitle.backgroundColor = [UIColor clearColor];
-            
-            fiveImg.accessibilityLabel = [muDict objectForKey:@"serverID"];
-            fiveImg.userInteractionEnabled = YES;
-            UITapGestureRecognizer *sigTab = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(panelClick:)];
-            [fiveImg addGestureRecognizer:sigTab];
-            
-            if ([[muDict objectForKey:@"hasVideo"] intValue] == 1)
-            {
-                [self addVideoImage:fiveImg];
-            }
-        }
-        else
-        {
-            fiveImg.hidden = YES;
-            fiveLabelTitle.hidden = YES;
-            fiveView.hidden = YES;
-        }
+       
         
         [columnScrollView addSubview:subview];
         

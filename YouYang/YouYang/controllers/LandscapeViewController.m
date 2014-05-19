@@ -19,8 +19,6 @@
 
 @implementation LandscapeViewController
 
-@synthesize landscapeTitleLabel;
-
 extern DBUtils *db;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -36,7 +34,6 @@ extern DBUtils *db;
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [landscapeTitleLabel setText:NSLocalizedString(@"landscapeTitle", nil)];
     
     int countArticle = [db countByCategory:LANDSCAPE_CATEGORY];
     countPage = (countArticle / LANDSCAPE_PAGE_INSIDE_NUM);
@@ -131,9 +128,9 @@ extern DBUtils *db;
             firstView.hidden = YES;
         }
         
-        UIImageView *secondImg = (UIImageView*)[subview viewWithTag:111];
-        UILabel* secondLabelTitle = (UILabel*)[subview viewWithTag:112];
-        UIView* secondView = (UIView *)[subview viewWithTag:133];
+        UIImageView *secondImg = (UIImageView*)[subview viewWithTag:105];
+        UILabel* secondLabelTitle = (UILabel*)[subview viewWithTag:106];
+        UIView* secondView = (UIView *)[subview viewWithTag:131];
         
         if (muArray.count >= 2 && [muArray objectAtIndex:1])
         {
@@ -166,9 +163,9 @@ extern DBUtils *db;
             secondView.hidden = YES;
         }
         
-        UIImageView *thirdImg = (UIImageView*)[subview viewWithTag:105];
-        UILabel* thirdLabelTitle = (UILabel*)[subview viewWithTag:106];
-        UIView* thirdView = (UIView *)[subview viewWithTag:131];
+        UIImageView *thirdImg = (UIImageView*)[subview viewWithTag:108];
+        UILabel* thirdLabelTitle = (UILabel*)[subview viewWithTag:109];
+        UIView* thirdView = (UIView *)[subview viewWithTag:132];
         
         if (muArray.count >= 3 && [muArray objectAtIndex:2])
         {
@@ -199,112 +196,6 @@ extern DBUtils *db;
             thirdImg.hidden = YES;
             thirdLabelTitle.hidden = YES;
             thirdView.hidden = YES;
-        }
-        
-        UIImageView *fourImg = (UIImageView*)[subview viewWithTag:114];
-        UILabel* fourLabelTitle = (UILabel*)[subview viewWithTag:115];
-        UIView* fourView = (UIView *)[subview viewWithTag:134];
-        
-        if (muArray.count >= 4 && [muArray objectAtIndex:3])
-        {
-            NSMutableDictionary *muDict = [muArray objectAtIndex:3];
-            
-            //异步加载图片
-            downOperation = [self loadingImageOperation:muDict andImageView:fourImg];
-            if (downOperation != nil)
-            {
-                [thumbDownQueue addOperation:downOperation];
-            }
-            
-            
-            [fourLabelTitle setText:[muDict objectForKey:@"title"]];
-            fourLabelTitle.backgroundColor = [UIColor clearColor];
-            
-            fourImg.accessibilityLabel = [muDict objectForKey:@"serverID"];
-            fourImg.userInteractionEnabled = YES;
-            UITapGestureRecognizer *sigTab = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(panelClick:)];
-            [fourImg addGestureRecognizer:sigTab];
-            
-            if ([[muDict objectForKey:@"hasVideo"] intValue] == 1)
-            {
-                [self addVideoImage:fourImg];
-            }
-        }
-        else
-        {
-            fourImg.hidden = YES;
-            fourLabelTitle.hidden = YES;
-            fourView.hidden = YES;
-        }
-        
-        UIImageView *fiveImg = (UIImageView*)[subview viewWithTag:108];
-        UILabel* fiveLabelTitle = (UILabel*)[subview viewWithTag:109];
-        UIView* fiveView = (UIView *)[subview viewWithTag:132];
-        
-        if (muArray.count >= 5 && [muArray objectAtIndex:4])
-        {
-            NSMutableDictionary *muDict = [muArray objectAtIndex:4];
-            
-            //异步加载图片
-            downOperation = [self loadingImageOperation:muDict andImageView:fiveImg];
-            if (downOperation != nil)
-            {
-                [thumbDownQueue addOperation:downOperation];
-            }
-            
-            [fiveLabelTitle setText:[muDict objectForKey:@"title"]];
-            fiveLabelTitle.backgroundColor = [UIColor clearColor];
-            
-            fiveImg.accessibilityLabel = [muDict objectForKey:@"serverID"];
-            fiveImg.userInteractionEnabled = YES;
-            UITapGestureRecognizer *sigTab = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(panelClick:)];
-            [fiveImg addGestureRecognizer:sigTab];
-            
-            if ([[muDict objectForKey:@"hasVideo"] intValue] == 1)
-            {
-                [self addVideoImage:fiveImg];
-            }
-        }
-        else
-        {
-            fiveImg.hidden = YES;
-            fiveLabelTitle.hidden = YES;
-            fiveView.hidden = YES;
-        }
-        
-        UIImageView *sixImg = (UIImageView*)[subview viewWithTag:117];
-        UILabel* sixLabelTitle = (UILabel*)[subview viewWithTag:118];
-        UIView* sixView = (UIView *)[subview viewWithTag:135];
-        
-        if (muArray.count >= 6 && [muArray objectAtIndex:5])
-        {
-            NSMutableDictionary *muDict = [muArray objectAtIndex:5];
-            
-            //异步加载图片
-            downOperation = [self loadingImageOperation:muDict andImageView:sixImg];
-            if (downOperation != nil)
-            {
-                [thumbDownQueue addOperation:downOperation];
-            }
-            
-            [sixLabelTitle setText:[muDict objectForKey:@"title"]];
-            sixLabelTitle.backgroundColor = [UIColor clearColor];
-            
-            sixImg.accessibilityLabel = [muDict objectForKey:@"serverID"];
-            sixImg.userInteractionEnabled = YES;
-            UITapGestureRecognizer *sigTab = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(panelClick:)];
-            [sixImg addGestureRecognizer:sigTab];
-            
-            if ([[muDict objectForKey:@"hasVideo"] intValue] == 1)
-            {
-                [self addVideoImage:sixImg];
-            }
-        }
-        else
-        {
-            sixImg.hidden = YES;
-            sixLabelTitle.hidden = YES;
-            sixView.hidden = YES;
         }
         
         [columnScrollView addSubview:subview];

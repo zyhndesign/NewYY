@@ -19,8 +19,6 @@
 
 @implementation HumanityViewController
 
-@synthesize humanityTitleLabel;
-
 extern DBUtils *db;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -36,7 +34,6 @@ extern DBUtils *db;
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [humanityTitleLabel setText:NSLocalizedString(@"humanityTitle", nil)];
     
     int countArticle = [db countByCategory:HUMANITY_CATEGORY];
     countPage = (countArticle / HUMANITY_PAGE_INSIDE_NUM);

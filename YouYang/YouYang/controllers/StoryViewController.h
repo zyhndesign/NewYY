@@ -10,9 +10,8 @@
 
 @interface StoryViewController : ColumnViewController
 {
-    IBOutlet UILabel *storyTitleLabel;
+    
 }
-@property (strong, nonatomic) IBOutlet UILabel *storyTitleLabel;
 
 - (IBAction)changePage:(id)sender;
 

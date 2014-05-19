@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D501D6AA1929A21F005EA9F7 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = D501D6A81929A21F005EA9F7 /* Constants.m */; };
 		D52E85041925F7F200C93F48 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D52E85031925F7F200C93F48 /* Foundation.framework */; };
 		D52E85061925F7F200C93F48 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D52E85051925F7F200C93F48 /* CoreGraphics.framework */; };
 		D52E85081925F7F200C93F48 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D52E85071925F7F200C93F48 /* UIKit.framework */; };
@@ -76,9 +77,9 @@
 		D536B70E1926F120000EFB35 /* DownloadWin.xib in Resources */ = {isa = PBXBuildFile; fileRef = D536B6FF1926F120000EFB35 /* DownloadWin.xib */; };
 		D536B70F1926F120000EFB35 /* Footer.xib in Resources */ = {isa = PBXBuildFile; fileRef = D536B7001926F120000EFB35 /* Footer.xib */; };
 		D536B7101926F120000EFB35 /* HomeBoard.xib in Resources */ = {isa = PBXBuildFile; fileRef = D536B7011926F120000EFB35 /* HomeBoard.xib */; };
-		D536B7111926F120000EFB35 /* HumanityBoard.xib in Resources */ = {isa = PBXBuildFile; fileRef = D536B7021926F120000EFB35 /* HumanityBoard.xib */; };
+		D536B7111926F120000EFB35 /* LandscapeBoard.xib in Resources */ = {isa = PBXBuildFile; fileRef = D536B7021926F120000EFB35 /* LandscapeBoard.xib */; };
 		D536B7121926F120000EFB35 /* HumanityContentPanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = D536B7031926F120000EFB35 /* HumanityContentPanel.xib */; };
-		D536B7131926F120000EFB35 /* LandscapeBoard.xib in Resources */ = {isa = PBXBuildFile; fileRef = D536B7041926F120000EFB35 /* LandscapeBoard.xib */; };
+		D536B7131926F120000EFB35 /* HumanityBoard.xib in Resources */ = {isa = PBXBuildFile; fileRef = D536B7041926F120000EFB35 /* HumanityBoard.xib */; };
 		D536B7141926F120000EFB35 /* LandscapeContentPanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = D536B7051926F120000EFB35 /* LandscapeContentPanel.xib */; };
 		D536B7151926F120000EFB35 /* MusicPlayerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D536B7061926F120000EFB35 /* MusicPlayerView.xib */; };
 		D536B7161926F120000EFB35 /* PopDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D536B7071926F120000EFB35 /* PopDetailView.xib */; };
@@ -98,6 +99,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D501D6A71929A21F005EA9F7 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		D501D6A81929A21F005EA9F7 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		D501D6A91929A21F005EA9F7 /* VarUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VarUtils.h; sourceTree = "<group>"; };
 		D52E85001925F7F200C93F48 /* YouYang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouYang.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D52E85031925F7F200C93F48 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D52E85051925F7F200C93F48 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -229,9 +233,9 @@
 		D536B6FF1926F120000EFB35 /* DownloadWin.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DownloadWin.xib; sourceTree = "<group>"; };
 		D536B7001926F120000EFB35 /* Footer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Footer.xib; sourceTree = "<group>"; };
 		D536B7011926F120000EFB35 /* HomeBoard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeBoard.xib; sourceTree = "<group>"; };
-		D536B7021926F120000EFB35 /* HumanityBoard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HumanityBoard.xib; sourceTree = "<group>"; };
+		D536B7021926F120000EFB35 /* LandscapeBoard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LandscapeBoard.xib; sourceTree = "<group>"; };
 		D536B7031926F120000EFB35 /* HumanityContentPanel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HumanityContentPanel.xib; sourceTree = "<group>"; };
-		D536B7041926F120000EFB35 /* LandscapeBoard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LandscapeBoard.xib; sourceTree = "<group>"; };
+		D536B7041926F120000EFB35 /* HumanityBoard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HumanityBoard.xib; sourceTree = "<group>"; };
 		D536B7051926F120000EFB35 /* LandscapeContentPanel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LandscapeContentPanel.xib; sourceTree = "<group>"; };
 		D536B7061926F120000EFB35 /* MusicPlayerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MusicPlayerView.xib; sourceTree = "<group>"; };
 		D536B7071926F120000EFB35 /* PopDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopDetailView.xib; sourceTree = "<group>"; };
@@ -297,6 +301,9 @@
 		D52E85091925F7F200C93F48 /* YouYang */ = {
 			isa = PBXGroup;
 			children = (
+				D501D6A71929A21F005EA9F7 /* Constants.h */,
+				D501D6A81929A21F005EA9F7 /* Constants.m */,
+				D501D6A91929A21F005EA9F7 /* VarUtils.h */,
 				D52E85BF1925FB3500C93F48 /* controllers */,
 				D52E85C01925FB3500C93F48 /* images */,
 				D52E85C11925FB3500C93F48 /* xibs */,
@@ -577,9 +584,9 @@
 				D536B6FF1926F120000EFB35 /* DownloadWin.xib */,
 				D536B7001926F120000EFB35 /* Footer.xib */,
 				D536B7011926F120000EFB35 /* HomeBoard.xib */,
-				D536B7021926F120000EFB35 /* HumanityBoard.xib */,
+				D536B7021926F120000EFB35 /* LandscapeBoard.xib */,
 				D536B7031926F120000EFB35 /* HumanityContentPanel.xib */,
-				D536B7041926F120000EFB35 /* LandscapeBoard.xib */,
+				D536B7041926F120000EFB35 /* HumanityBoard.xib */,
 				D536B7051926F120000EFB35 /* LandscapeContentPanel.xib */,
 				D536B7061926F120000EFB35 /* MusicPlayerView.xib */,
 				D536B7071926F120000EFB35 /* PopDetailView.xib */,
@@ -672,13 +679,13 @@
 				D52E851C1925F7F200C93F48 /* Images.xcassets in Resources */,
 				D536B7121926F120000EFB35 /* HumanityContentPanel.xib in Resources */,
 				D536B70D1926F120000EFB35 /* DownloadTableViewCell.xib in Resources */,
-				D536B7111926F120000EFB35 /* HumanityBoard.xib in Resources */,
+				D536B7111926F120000EFB35 /* LandscapeBoard.xib in Resources */,
 				D536B7181926F120000EFB35 /* StoryContentPanel.xib in Resources */,
 				D536B70B1926F120000EFB35 /* CommunityBoard.xib in Resources */,
 				D536B7151926F120000EFB35 /* MusicPlayerView.xib in Resources */,
 				D536B70F1926F120000EFB35 /* Footer.xib in Resources */,
 				D52E850E1925F7F200C93F48 /* InfoPlist.strings in Resources */,
-				D536B7131926F120000EFB35 /* LandscapeBoard.xib in Resources */,
+				D536B7131926F120000EFB35 /* HumanityBoard.xib in Resources */,
 				D536B7101926F120000EFB35 /* HomeBoard.xib in Resources */,
 				D536B70E1926F120000EFB35 /* DownloadWin.xib in Resources */,
 				D52E85981925F8A400C93F48 /* 404.html in Resources */,
@@ -743,6 +750,7 @@
 				D52E85921925F8A400C93F48 /* FileUtils.m in Sources */,
 				D536B6F61926F0EC000EFB35 /* MusicViewController.m in Sources */,
 				D536B6F91926F0EC000EFB35 /* StoryViewController.m in Sources */,
+				D501D6AA1929A21F005EA9F7 /* Constants.m in Sources */,
 				D536B6EF1926F0EC000EFB35 /* ColumnViewController.m in Sources */,
 				D52E85951925F8A400C93F48 /* UILabel+VerticalAlign.m in Sources */,
 				D52E85A21925F8A400C93F48 /* AudioStreamer.m in Sources */,

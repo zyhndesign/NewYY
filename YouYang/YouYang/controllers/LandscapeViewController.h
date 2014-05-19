@@ -10,11 +10,8 @@
 
 @interface LandscapeViewController : ColumnViewController
 {
-    IBOutlet UILabel *landscapeTitleLabel;
     
 }
-
-@property (strong, nonatomic) IBOutlet UILabel *landscapeTitleLabel;
 
 - (IBAction)changePage:(id)sender;
 

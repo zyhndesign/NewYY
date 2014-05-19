@@ -10,9 +10,9 @@
 
 @interface HumanityViewController : ColumnViewController
 {
-    IBOutlet UILabel *humanityTitleLabel;
+    
 }
-@property (strong, nonatomic) IBOutlet UILabel *humanityTitleLabel;
+
 
 - (IBAction)pageChange:(id)sender;
 @end

@@ -16,8 +16,6 @@
     IBOutlet UIButton *musicPreviousBtn;
     IBOutlet UIButton *musicPlayOrPauseBtn;
     IBOutlet UIButton *musicNextBtn;
-
-    IBOutlet UIActivityIndicatorView *musicLoadIndicator;
     
     IBOutlet UIProgressView *musicProgressView;
     
@@ -34,7 +32,6 @@
     
     int isVideoToMusicPause; //纪录是否是因为视频播放引起暂停
 }
-@property (strong, nonatomic) IBOutlet UIActivityIndicatorView *musicLoadIndicator;
 
 @property (strong, nonatomic) IBOutlet UIButton *musicPreviousBtn;
 @property (strong, nonatomic) IBOutlet UIButton *musicPlayOrPauseBtn;
