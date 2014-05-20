@@ -18,7 +18,7 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="artifactFloat1" translatesAutoresizingMaskIntoConstraints="NO" id="Acz-6e-PnV">
-                    <rect key="frame" x="20" y="835" width="125" height="345"/>
+                    <rect key="frame" x="20" y="930" width="125" height="345"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" tag="150" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oUy-mD-wp7">
@@ -47,7 +47,7 @@
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>
                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="artifactFloat2" translatesAutoresizingMaskIntoConstraints="NO" id="zMS-ef-UMc">
-                    <rect key="frame" x="255" y="1333" width="505" height="190"/>
+                    <rect key="frame" x="255" y="1353" width="505" height="190"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>
                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="titleArtifact" translatesAutoresizingMaskIntoConstraints="NO" id="hMF-ly-sDb">

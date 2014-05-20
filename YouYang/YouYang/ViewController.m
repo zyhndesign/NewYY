@@ -159,7 +159,7 @@
         [storyBtn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
         [communityBtn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
         [recommendBtn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
-        [landscapeViewController rootscrollViewDidScrollToPointY:offsetY];
+        [landscapeViewController rootscrollViewDidScrollToPointY: (offsetY - landscapeYValue)];
     }
     else if (offsetY >= humanityYValue && offsetY < storyYValue)
     {
@@ -168,7 +168,7 @@
         [landscapeBtn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
         [communityBtn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
         [recommendBtn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
-        [humanityViewController rootscrollViewDidScrollToPointY:offsetY];
+        [humanityViewController rootscrollViewDidScrollToPointY:(offsetY - humanityYValue)];
     }
     else if (offsetY >= storyYValue && offsetY < communityYValue)
     {
@@ -177,7 +177,7 @@
         [landscapeBtn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
         [communityBtn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
         [recommendBtn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
-        [storyViewController rootscrollViewDidScrollToPointY:offsetY];
+        [storyViewController rootscrollViewDidScrollToPointY:(offsetY - storyYValue)];
     }
     else if (offsetY >= communityYValue)
     {
@@ -186,7 +186,7 @@
         [storyBtn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
         [landscapeBtn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
         [recommendBtn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
-        [communityViewController rootscrollViewDidScrollToPointY:offsetY];
+        [communityViewController rootscrollViewDidScrollToPointY:(offsetY - communityYValue)];
     }
     else if (offsetY < landscapeYValue)
     {

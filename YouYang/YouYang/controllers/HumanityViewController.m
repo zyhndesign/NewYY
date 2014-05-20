@@ -14,7 +14,11 @@
 #import "../classes/UILabel+VerticalAlign.h"
 
 @interface HumanityViewController ()
-
+{
+    int animationLeftImgY;
+    int animationBottomImgY;
+    int animationTopImgY;
+}
 @end
 
 @implementation HumanityViewController
@@ -70,6 +74,10 @@ extern DBUtils *db;
             [self assemblePanel:i];
         }
     }
+    
+    animationLeftImgY = animationLeftImg.frame.origin.y;
+    animationBottomImgY = animationBottomImg.frame.origin.y;
+    animationTopImgY = animationTopImg.frame.origin.y;
 }
 
 - (void)didReceiveMemoryWarning
@@ -261,9 +269,34 @@ extern DBUtils *db;
     }
 }
 
+#define HeighTopOne 450
+#define HeighTopTwo 100
+#define HeighTopThr 1200
+
 - (void)rootscrollViewDidScrollToPointY:(int)pointY
 {
-
+    
+    if (pointY > 100)
+    {
+        int positionYOne = animationTopImgY - (pointY - 10)/5;
+        positionYOne = positionYOne < HeighTopOne ? HeighTopOne:positionYOne;
+        [animationTopImg setFrame:CGRectMake(animationTopImg.frame.origin.x, positionYOne, animationTopImg.frame.size.width, animationTopImg.frame.size.height)];
+        
+    }
+    
+    if (pointY > 100)
+    {
+        int positionYTwo = animationLeftImgY - (pointY - 10)/3;
+        positionYTwo = positionYTwo < HeighTopTwo ? HeighTopTwo:positionYTwo;
+        [animationLeftImg setFrame:CGRectMake(animationLeftImg.frame.origin.x, positionYTwo, animationLeftImg.frame.size.width, animationLeftImg.frame.size.height)];
+    }
+    
+    if (pointY > 500)
+    {
+        int positionYThr = animationBottomImgY - (pointY - 450)/5;
+        positionYThr = positionYThr < HeighTopThr ? HeighTopThr:positionYThr;
+        [animationBottomImg setFrame:CGRectMake(animationBottomImg.frame.origin.x, positionYThr, animationBottomImg.frame.size.width, animationBottomImg.frame.size.height)];
+    }
 }
 
 /*

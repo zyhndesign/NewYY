@@ -7,9 +7,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HumanityViewController">
             <connections>
-                <outlet property="animationBottomImg" destination="FBH-WY-s02" id="whj-P6-J86"/>
-                <outlet property="animationLeftImg" destination="xeI-NK-oBD" id="VGA-Dl-udN"/>
-                <outlet property="animationTopImg" destination="xeI-NK-oBD" id="6og-mz-GmV"/>
+                <outlet property="animationBottomImg" destination="FBH-WY-s02" id="jiv-DC-na7"/>
+                <outlet property="animationLeftImg" destination="Fsn-oF-hOD" id="qq0-m7-MyP"/>
+                <outlet property="animationTopImg" destination="xeI-NK-oBD" id="dM0-NW-IBG"/>
                 <outlet property="view" destination="mpC-kv-L9D" id="7g9-q0-AHV"/>
             </connections>
         </placeholder>
@@ -26,10 +26,6 @@
                     <rect key="frame" x="224" y="612" width="800" height="500"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="humanityFloat2" translatesAutoresizingMaskIntoConstraints="NO" id="Fsn-oF-hOD">
-                    <rect key="frame" x="-80" y="328" width="260" height="1280"/>
-                    <autoresizingMask key="autoresizingMask"/>
-                </imageView>
                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="humanityFloat3" translatesAutoresizingMaskIntoConstraints="NO" id="FBH-WY-s02">
                     <rect key="frame" x="747" y="1358" width="330" height="420"/>
                     <autoresizingMask key="autoresizingMask"/>
@@ -38,7 +34,6 @@
                     <rect key="frame" x="493" y="1472" width="39" height="37"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <connections>
-                        <action selector="changePage:" destination="-1" eventType="valueChanged" id="fLd-j5-gMK"/>
                         <action selector="pageChange:" destination="-1" eventType="valueChanged" id="6ge-lo-Ygh"/>
                     </connections>
                 </pageControl>
@@ -56,6 +51,10 @@
                 </imageView>
                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="titleHumanity" translatesAutoresizingMaskIntoConstraints="NO" id="Jqw-aQ-Cf7">
                     <rect key="frame" x="362" y="792" width="300" height="150"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="humanityFloat2" translatesAutoresizingMaskIntoConstraints="NO" id="Fsn-oF-hOD">
+                    <rect key="frame" x="0.0" y="978" width="160" height="580"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" tag="150" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="obN-Y8-8ZQ">

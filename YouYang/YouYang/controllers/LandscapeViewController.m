@@ -14,10 +14,15 @@
 #import "../classes/UILabel+VerticalAlign.h"
 
 @interface LandscapeViewController ()
-
+{
+    int animationLeftImgY;
+    int animationRightImgY;
+}
 @end
 
 @implementation LandscapeViewController
+
+@synthesize animationLeftImg, animationRightImg;
 
 extern DBUtils *db;
 
@@ -68,11 +73,26 @@ extern DBUtils *db;
             [self assemblePanel:i];
         }
     }
+    
+    animationLeftImgY = animationLeftImg.frame.origin.y;
+    animationRightImgY = animationRightImg.frame.origin.y;
 }
 
+#define HeighTopOne 980
+#define HeighTopTwo 860
 - (void)rootscrollViewDidScrollToPointY:(int)pointY
 {
-   
+    
+    if (pointY > 500 && pointY < 800)
+    {
+        int positionYOne = animationLeftImgY - (pointY - 500)*1/3;
+        positionYOne = positionYOne < HeighTopOne ? HeighTopOne:positionYOne;
+        int positionYTwo = animationRightImgY - (pointY - 500)*1/3;
+        positionYTwo = positionYTwo < HeighTopTwo ? HeighTopTwo:positionYTwo;
+        
+        [animationLeftImg setFrame:CGRectMake(animationLeftImg.frame.origin.x, positionYOne, animationLeftImg.frame.size.width, animationLeftImg.frame.size.height)];
+        [animationRightImg setFrame:CGRectMake(animationRightImg.frame.origin.x, positionYTwo, animationRightImg.frame.size.width, animationRightImg.frame.size.height)];
+    }
 }
 
 -(void) assemblePanel:(int) pageNum

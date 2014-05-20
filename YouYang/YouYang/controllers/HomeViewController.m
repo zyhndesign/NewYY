@@ -135,17 +135,14 @@ PopupDetailViewController* detailViewController;
     }
 }
 
+#define HeighTop 825
+
 - (void)rootscrollViewDidScrollToPointY:(int)pointY
 {
-    if (pointY > animationBeginYValue && pointY < homeTopBackground.frame.size.height)
+    if (pointY > 200 && pointY < homeTopBackground.frame.size.height)
     {
-        int positionY = animationLeftImg.frame.size.height - (pointY - animationBeginYValue)/2;
-        [animationLeftImg setFrame:CGRectMake(animationLeftImg.frame.origin.x, positionY, animationLeftImg.frame.size.width, animationLeftImg.frame.size.height)];
-        [animationRightImg setFrame:CGRectMake(animationRightImg.frame.origin.x, positionY, animationRightImg.frame.size.width, animationRightImg.frame.size.height)];
-    }
-    if (pointY >= homeTopBackground.frame.size.height)
-    {
-        int positionY = 1250 - (homeTopBackground.frame.size.height - animationBeginYValue)/2 - (pointY - homeTopBackground.frame.size.height)/8;
+        int positionY = 1250 - (pointY - 200)/2;
+        positionY = positionY < HeighTop ? HeighTop:positionY;
         [animationLeftImg setFrame:CGRectMake(animationLeftImg.frame.origin.x, positionY, animationLeftImg.frame.size.width, animationLeftImg.frame.size.height)];
         [animationRightImg setFrame:CGRectMake(animationRightImg.frame.origin.x, positionY, animationRightImg.frame.size.width, animationRightImg.frame.size.height)];
     }

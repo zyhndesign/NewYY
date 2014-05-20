@@ -22,7 +22,7 @@
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>
                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="landscapeContentBg1" translatesAutoresizingMaskIntoConstraints="NO" id="zMB-M4-QbE">
-                    <rect key="frame" x="0.0" y="1083" width="620" height="470"/>
+                    <rect key="frame" x="0.0" y="1103" width="620" height="470"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>
                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="landscapeContentBg2" translatesAutoresizingMaskIntoConstraints="NO" id="zeT-DZ-1Ei">

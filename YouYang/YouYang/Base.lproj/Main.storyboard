@@ -24,8 +24,8 @@
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="V1t-1M-4z3">
                                 <rect key="frame" x="488" y="300" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="0.79607843140000001" green="0.1843137255" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="color" red="0.98431378599999997" green="0.09803922474" blue="0.019607843829999999" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="tintColor" red="0.70588235290000001" green="0.65490196079999996" blue="0.59215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="color" red="0.70588235290000001" green="0.65490196079999996" blue="0.59215686270000001" alpha="1" colorSpace="calibratedRGB"/>
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
