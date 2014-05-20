@@ -163,8 +163,8 @@
     }
     else if (offsetY >= humanityYValue && offsetY < storyYValue)
     {
-        [storyBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-        [humanityBtn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
+        [humanityBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [storyBtn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
         [landscapeBtn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
         [communityBtn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
         [recommendBtn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
@@ -231,8 +231,8 @@
 - (IBAction)humanityBtnClick:(id)sender
 {
     [mainScrollView setContentOffset:CGPointMake(mainScrollView.frame.origin.x, humanityYValue) animated:YES];
-    [storyBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [humanityBtn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
+    [humanityBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [storyBtn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
     [landscapeBtn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
     [communityBtn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
     [recommendBtn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
