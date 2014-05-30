@@ -30,7 +30,7 @@
             <rect key="frame" x="0.0" y="0.0" width="1024" height="1436"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="bgFeatured" translatesAutoresizingMaskIntoConstraints="NO" id="qyV-X3-ywe">
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" fixedFrame="YES" image="bgFeatured" translatesAutoresizingMaskIntoConstraints="NO" id="qyV-X3-ywe">
                     <rect key="frame" x="0.0" y="668" width="1024" height="768"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>
@@ -128,7 +128,7 @@
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                 </view>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="HomeBackground" translatesAutoresizingMaskIntoConstraints="NO" id="mHe-WS-H0Z">
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" fixedFrame="YES" image="HomeBackground" translatesAutoresizingMaskIntoConstraints="NO" id="mHe-WS-H0Z">
                     <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>

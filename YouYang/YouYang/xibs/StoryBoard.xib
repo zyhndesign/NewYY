@@ -34,7 +34,7 @@
                         <action selector="changePage:" destination="-1" eventType="valueChanged" id="Vdh-10-xPw"/>
                     </connections>
                 </pageControl>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="StoryBackground" translatesAutoresizingMaskIntoConstraints="NO" id="BHi-Gs-g2M">
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" fixedFrame="YES" image="StoryBackground" translatesAutoresizingMaskIntoConstraints="NO" id="BHi-Gs-g2M">
                     <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>

@@ -16,7 +16,7 @@
             <rect key="frame" x="0.0" y="0.0" width="1024" height="1779"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="bgCommunity" translatesAutoresizingMaskIntoConstraints="NO" id="LbN-F7-ocT">
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" fixedFrame="YES" image="bgCommunity" translatesAutoresizingMaskIntoConstraints="NO" id="LbN-F7-ocT">
                     <rect key="frame" x="0.0" y="639" width="1024" height="1140"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>
@@ -37,7 +37,7 @@
                         <action selector="pageChange:" destination="-1" eventType="valueChanged" id="wXY-c0-CbE"/>
                     </connections>
                 </pageControl>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="CommunityBackground" translatesAutoresizingMaskIntoConstraints="NO" id="9CJ-7Y-0we">
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" fixedFrame="YES" image="CommunityBackground" translatesAutoresizingMaskIntoConstraints="NO" id="9CJ-7Y-0we">
                     <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>

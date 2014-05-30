@@ -18,7 +18,7 @@
             <rect key="frame" x="0.0" y="0.0" width="1024" height="1536"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="bgHumanity" translatesAutoresizingMaskIntoConstraints="NO" id="UUf-Cl-efw">
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" fixedFrame="YES" image="bgHumanity" translatesAutoresizingMaskIntoConstraints="NO" id="UUf-Cl-efw">
                     <rect key="frame" x="0.0" y="768" width="1024" height="768"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>
@@ -37,7 +37,7 @@
                         <action selector="pageChange:" destination="-1" eventType="valueChanged" id="6ge-lo-Ygh"/>
                     </connections>
                 </pageControl>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="HumanityBackground" translatesAutoresizingMaskIntoConstraints="NO" id="P3q-J3-7fi">
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" fixedFrame="YES" image="HumanityBackground" translatesAutoresizingMaskIntoConstraints="NO" id="P3q-J3-7fi">
                     <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>

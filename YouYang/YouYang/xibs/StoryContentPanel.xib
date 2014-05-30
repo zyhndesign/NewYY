@@ -11,11 +11,11 @@
             <rect key="frame" x="0.0" y="0.0" width="824" height="260"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="307" contentMode="scaleToFill" fixedFrame="YES" image="default-238" translatesAutoresizingMaskIntoConstraints="NO" id="W7Q-6p-In0">
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="307" contentMode="scaleAspectFill" fixedFrame="YES" image="default-238" translatesAutoresizingMaskIntoConstraints="NO" id="W7Q-6p-In0">
                     <rect key="frame" x="561" y="9" width="238" height="238"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="301" contentMode="scaleToFill" fixedFrame="YES" image="default-238" translatesAutoresizingMaskIntoConstraints="NO" id="sju-Jg-qjh">
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="301" contentMode="scaleAspectFill" fixedFrame="YES" image="default-238" translatesAutoresizingMaskIntoConstraints="NO" id="sju-Jg-qjh">
                     <rect key="frame" x="26" y="9" width="238" height="238"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>
@@ -47,7 +47,7 @@
                     </subviews>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="304" contentMode="scaleToFill" fixedFrame="YES" image="default-238" translatesAutoresizingMaskIntoConstraints="NO" id="FeC-j9-4Hj">
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="304" contentMode="scaleAspectFill" fixedFrame="YES" image="default-238" translatesAutoresizingMaskIntoConstraints="NO" id="FeC-j9-4Hj">
                     <rect key="frame" x="294" y="9" width="238" height="238"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>

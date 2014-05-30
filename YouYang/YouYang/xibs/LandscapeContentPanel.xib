@@ -11,7 +11,7 @@
             <rect key="frame" x="0.0" y="0.0" width="1024" height="260"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="102" contentMode="scaleToFill" fixedFrame="YES" image="default-238" translatesAutoresizingMaskIntoConstraints="NO" id="uMU-2f-33T">
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="102" contentMode="scaleAspectFill" fixedFrame="YES" image="default-238" translatesAutoresizingMaskIntoConstraints="NO" id="uMU-2f-33T">
                     <rect key="frame" x="148" y="7" width="238" height="238"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>
@@ -27,7 +27,7 @@
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="105" contentMode="scaleToFill" fixedFrame="YES" image="default-238" translatesAutoresizingMaskIntoConstraints="NO" id="LPV-f2-hq7">
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="105" contentMode="scaleAspectFill" fixedFrame="YES" image="default-238" translatesAutoresizingMaskIntoConstraints="NO" id="LPV-f2-hq7">
                     <rect key="frame" x="407" y="7" width="238" height="238"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>
@@ -43,7 +43,7 @@
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="108" contentMode="scaleToFill" fixedFrame="YES" image="default-238" translatesAutoresizingMaskIntoConstraints="NO" id="oji-bh-8oc">
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="108" contentMode="scaleAspectFill" fixedFrame="YES" image="default-238" translatesAutoresizingMaskIntoConstraints="NO" id="oji-bh-8oc">
                     <rect key="frame" x="653" y="7" width="238" height="238"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>

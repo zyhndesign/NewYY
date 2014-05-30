@@ -17,7 +17,7 @@
             <rect key="frame" x="0.0" y="0.0" width="1024" height="1436"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="bgArtifact" translatesAutoresizingMaskIntoConstraints="NO" id="jl4-VN-rxv">
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" fixedFrame="YES" image="bgArtifact" translatesAutoresizingMaskIntoConstraints="NO" id="jl4-VN-rxv">
                     <rect key="frame" x="0.0" y="688" width="1024" height="748"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>
@@ -43,7 +43,7 @@
                         <action selector="pageChange:" destination="-1" eventType="valueChanged" id="lra-Hf-ksa"/>
                     </connections>
                 </pageControl>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="LandscapeBackground" translatesAutoresizingMaskIntoConstraints="NO" id="CTN-9M-akX">
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" fixedFrame="YES" image="LandscapeBackground" translatesAutoresizingMaskIntoConstraints="NO" id="CTN-9M-akX">
                     <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>
